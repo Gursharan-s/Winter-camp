@@ -1,9 +1,16 @@
-let color = "Red";
-const level = 2;
-var star = "super";
+// let color = "Red";
+// const level = 2;
+// var star = "super";
 
-console.log(color);
-console.log(level);
-console.log(star);
+// console.log(color);
+// console.log(level);
+// console.log(star);
 
+function greet(name) {
+    return "Ke hal a ji " + name;
+}
+
+let sathsekal = greet(" gopi")
+
+console.log(sathsekal +  " oooo");
 
