@@ -57,15 +57,31 @@
 
 
 
-function greet(name, age) {
-    return "Ke hal a ji " + name + ", thode umar taa " + age;
+// function greet(name, age) {
+//     return "Ke hal a ji " + name + ", thode umar taa " + age;
+// }
+
+// const user = {
+//     name: "kirat",
+//     age: 20,
+// };
+// console.log(greet(user.name, user.age));
+
+
+
+function greet(name, age ,gender) {
+    return "Ke hal a ji " + name + ", thode umar taa " + age + "tussi kudi aa " + gender;
 }
 
 const user = {
     name: "kirat",
     age: 20,
+    gender : "girl"
 };
-console.log(greet(user.name, user.age));
-
-
-
+const user1 = {
+    name: "simran",
+    age: 20,
+    gender : "girl"
+};
+console.log(greet(user.name, user.age , user.gender));
+console.log(greet(user1.name, user1.age , user1.gender));
