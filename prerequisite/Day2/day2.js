@@ -49,10 +49,23 @@
 
 // }
 
-let i = 0 ; 
-while (i < 10) {
-    console.log("yess " + i);
-    i++;
+// let i = 0 ; 
+// while (i < 10) {
+//     console.log("yess " + i);
+//     i++;
+// }
+
+
+
+function greet(name, age) {
+    return "Ke hal a ji " + name + ", thode umar taa " + age;
 }
+
+const user = {
+    name: "kirat",
+    age: 20,
+};
+console.log(greet(user.name, user.age));
+
 
 
