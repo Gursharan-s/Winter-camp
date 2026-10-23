@@ -44,9 +44,15 @@
 // vanvote(user3.age);
 // console.log(vanvote);
 
-for (let i = 0; i < 10; i++) {
-    console.log("yes ", i);
+// for (let i = 0; i < 10; i++) {
+//     console.log("yes ", i);
 
+// }
+
+let i = 0 ; 
+while (i < 10) {
+    console.log("yess " + i);
+    i++;
 }
 
 
