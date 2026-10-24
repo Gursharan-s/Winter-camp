@@ -113,7 +113,7 @@ app.get('/todos/:id', async (req, res) => {
     }
 })
 
-app.delete('/todos/:id', async(req, res) => {
+app.delete('/todos/:id', async(req, res) => { 
     try {
         const { id } = req.params
         const todo = await todoModel.findById(id)
