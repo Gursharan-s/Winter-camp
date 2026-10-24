@@ -97,7 +97,7 @@
 
 const user = ["manthan" , "kanak" , "venom"] ;
 
-const chutiya = user
+const chutiy = user
 
 console.log(chutiya);
 
