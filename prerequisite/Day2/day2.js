@@ -69,28 +69,35 @@
 
 
 
-function greet(name, age, gender) {
-    if (age >= 18) {
-        console.log("yo can give vote ");
+// function greet(name, age, gender) {
+//     if (age >= 18) {
+//         console.log("yo can give vote ");
 
-    }
-    else {
-        console.log("you can not give vote chal chalo ji");
+//     }
+//     else {
+//         console.log("you can not give vote chal chalo ji");
 
-    }
+//     }
 
-    return "Ke hal a ji " + name + ", thode umar taa " + age + "tussi kudi aa " + gender;
-}
+//     return "Ke hal a ji " + name + ", thode umar taa " + age + "tussi kudi aa " + gender;
+// }
 
-const user = {
-    name: "kirat",
-    age: 20,
-    gender: "girl"
-};
-const user1 = {
-    name: "simran",
-    age: 10,
-    gender: "girl"
-};
-console.log(greet(user.name, user.age, user.gender));
-console.log(greet(user1.name, user1.age, user1.gender));
+// const user = {
+//     name: "kirat",
+//     age: 20,
+//     gender: "girl"
+// };
+// const user1 = {
+//     name: "simran",
+//     age: 10,
+//     gender: "girl"
+// };
+// console.log(greet(user.name, user.age, user.gender));
+// console.log(greet(user1.name, user1.age, user1.gender));
+
+const user = ["manthan" , "kanak" , "venom"] ;
+
+const chutiya = user
+
+console.log(chutiya);
+
