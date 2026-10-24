@@ -99,5 +99,5 @@ const user = ["manthan" , "kanak" , "venom"] ;
 
 const chutiy = user
 
-console.log(chutiya);
+console.log(chutiy);
 
