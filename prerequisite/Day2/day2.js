@@ -116,17 +116,37 @@
 // console.log(gre);
 
 
-function digit (names) {
-    return names.filter((names) => names.length > 1)  
+// function digit (names) {
+//     return names.filter((names) => names.length > 1)  
+// }
+// const names = ["Aman", "Raj", "Gursharan", "Simran", "Jay"];
+
+// const four = digit(names);
+
+// console.log(four);
+
+
+function userrr(uuu) {
+    return uuu.filter((uuu) => uuu.age > 18);
+
 }
-const names = ["Aman", "Raj", "Gursharan", "Simran", "Jay"];
+const user = {
+    name: "gursharan",
+    age: 20
+}
+const user1 = {
+    name: "guru",
+    age: 19
+}
+const user2 = {
+    name: "kirat",
+    age: 10
+}
 
-const four = digit(names);
+const uuu = [user, user1, user2 ]
+const age = userrr(uuu);
+console.log(age);
 
-console.log(four);
-
-
-// const user = ["gopi" , "jxxgi" , "gurxx" , "asu" , "harryz", "sunnyz"]
 
 
 
