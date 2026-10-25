@@ -95,9 +95,38 @@
 // console.log(greet(user.name, user.age, user.gender));
 // console.log(greet(user1.name, user1.age, user1.gender));
 
-const user = ["manthan" , "kanak" , "venom"] ;
 
-const chutiy = user
+// function even (uu) {
+//     return uu.filter(uu => uu % 2 === 0)
+// }
 
-console.log(chutiy);
+// const uu = [1 , 2, 3,4,5,6,7,8,9,10];
+// const evennm = even(uu);
+
+// console.log(evennm);
+
+// function greater (numbers) {
+//     return numbers.filter (numbers => numbers >10);
+// }
+
+// const numbers = [5, 12, 8, 20, 3, 15];
+
+// const gre = greater(numbers);
+
+// console.log(gre);
+
+
+function digit (names) {
+    return names.filter((names) => names.length > 1)  
+}
+const names = ["Aman", "Raj", "Gursharan", "Simran", "Jay"];
+
+const four = digit(names);
+
+console.log(four);
+
+
+// const user = ["gopi" , "jxxgi" , "gurxx" , "asu" , "harryz", "sunnyz"]
+
+
 
