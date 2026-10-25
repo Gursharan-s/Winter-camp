@@ -126,27 +126,51 @@
 // console.log(four);
 
 
+// function userrr(uuu) {
+//     return uuu.filter((uuu) => uuu.age > 18);
+
+// }
+// const user = {
+//     name: "gursharan",
+//     age: 20
+// }
+// const user1 = {
+//     name: "guru",
+//     age: 19
+// }
+// const user2 = {
+//     name: "kirat",
+//     age: 10
+// }
+
+// const uuu = [user, user1, user2 ]
+// const age = userrr(uuu);
+// console.log(age);
+
+
+
 function userrr(uuu) {
-    return uuu.filter((uuu) => uuu.age > 18);
+    return uuu.filter((uuu) => uuu.age > 18  && uuu.gender === "male");
 
 }
 const user = {
     name: "gursharan",
-    age: 20
+    age: 20,
+    gender : "male"
 }
 const user1 = {
     name: "guru",
-    age: 19
+    age: 19,
+    gender : "female"
 }
 const user2 = {
     name: "kirat",
-    age: 10
+    age: 10,
+    gender : "male"
 }
 
 const uuu = [user, user1, user2 ]
 const age = userrr(uuu);
 console.log(age);
-
-
 
 
