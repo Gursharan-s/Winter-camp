@@ -61,16 +61,25 @@
 //     console.log(i);
 // }
 
-const fs = require("fs");
+// const fs = require("fs");
 
-fs.readFile("a.txt" , "utf-8" , function (err , content ) {
-    if (err) {
-        console.log(err.message);
-        return;
-    }
-    console.log(content);
-})
+// fs.readFile("a.txt" , "utf-8" , function (err , content ) {
+//     if (err) {
+//         console.log(err.message);
+//         return;
+//     }
+//     console.log(content);
+// })
 
-for (let i = 0; i < 19; i++) {
-    console.log(i);
+// for (let i = 0; i < 19; i++) {
+//     console.log(i);
+// }
+
+console.log("working");
+
+function run() {
+    console.log("done");
+
 }
+
+setTimeout(run  ,2000);
