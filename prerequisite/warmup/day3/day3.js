@@ -75,11 +75,11 @@
 //     console.log(i);
 // }
 
-console.log("working");
+// console.log("working");
 
-function run() {
-    console.log("done");
+// function run() {
+//     console.log("done");
 
-}
+// }
 
-setTimeout(run  ,2000);
+// setTimeout(run  ,2000);
