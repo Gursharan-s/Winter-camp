@@ -31,14 +31,32 @@
 
 
 
+// const fs = require("fs");
+
+// const content = fs.readFileSync ("a.txt" , "utf-8" );
+// console.log(content);
+
+// const content1 = fs.readFileSync ("b.txt" , "utf-8" );
+// console.log(content1);
+// const content2 = fs.readFileSync ("a.txt" , "utf-8" );
+// console.log(content2);
+
+
+
+// ead a file asynchronously
+
 const fs = require("fs");
 
-const content = fs.readFileSync ("a.txt" , "utf-8" );
-console.log(content);
+fs.readFile("a.txt", "utf-8", function (err, content) {
+    console.log(content)
+});
+fs.readFile("a.txt", "utf-8", function (err, content) {
+    console.log(content)
+});
+fs.readFile("b.txt", "utf-8", function (err, content) {
+    console.log(content)
+});
 
-const content1 = fs.readFileSync ("b.txt" , "utf-8" );
-console.log(content1);
-const content2 = fs.readFileSync ("a.txt" , "utf-8" );
-console.log(content2);
-
-
+for (let i = 0; i < 19; i++) {
+    console.log(i);
+}
