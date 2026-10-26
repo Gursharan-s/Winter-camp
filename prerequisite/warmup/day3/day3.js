@@ -45,17 +45,31 @@
 
 // ead a file asynchronously
 
+// const fs = require("fs");
+
+// fs.readFile("a.txt", "utf-8", function (err, content) {
+//     console.log(content)
+// });
+// fs.readFile("a.txt", "utf-8", function (err, content) {
+//     console.log(content)
+// });
+// fs.readFile("b.txt", "utf-8", function (err, content) {
+//     console.log(content)
+// });
+
+// for (let i = 0; i < 19; i++) {
+//     console.log(i);
+// }
+
 const fs = require("fs");
 
-fs.readFile("a.txt", "utf-8", function (err, content) {
-    console.log(content)
-});
-fs.readFile("a.txt", "utf-8", function (err, content) {
-    console.log(content)
-});
-fs.readFile("b.txt", "utf-8", function (err, content) {
-    console.log(content)
-});
+fs.readFile("a.txt" , "utf-8" , function (err , content ) {
+    if (err) {
+        console.log(err.message);
+        return;
+    }
+    console.log(content);
+})
 
 for (let i = 0; i < 19; i++) {
     console.log(i);
