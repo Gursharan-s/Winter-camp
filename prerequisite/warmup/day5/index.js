@@ -1,32 +1,32 @@
-let todoindex = 1;
+// let todoindex = 1;
 
-function todos() {
+// function todos() {
 
-    const element = document.getElementById("input");
-    const todo1 = element.value;
-    element.value = "";
-    
-    const adddiv = document.createElement("div");
-    adddiv.id = "todo" + todoindex;
+//     const element = document.getElementById("input");
+//     const todo1 = element.value;
+//     element.value = "";
 
-    const addspan = document.createElement("span");
-    addspan.innerHTML = todo1;
+//     const adddiv = document.createElement("div");
+//     adddiv.id = "todo" + todoindex;
 
-    adddiv.appendChild(addspan);
+//     const addspan = document.createElement("span");
+//     addspan.innerHTML = todo1;
 
-    const buttonadd = document.createElement("button");
-    buttonadd.innerHTML = "Deletetodo";
+//     adddiv.appendChild(addspan);
 
-    buttonadd.setAttribute("onclick", "Deletetodo(" + todoindex + ")");
+//     const buttonadd = document.createElement("button");
+//     buttonadd.innerHTML = "Deletetodo";
 
-    adddiv.appendChild(buttonadd);
+//     buttonadd.setAttribute("onclick", "Deletetodo(" + todoindex + ")");
 
-    document.getElementById("todoo").appendChild(adddiv);
-    todoindex = todoindex + 1;
+//     adddiv.appendChild(buttonadd);
 
-}
+//     document.getElementById("todoo").appendChild(adddiv);
+//     todoindex = todoindex + 1;
 
-function Deletetodo(index) {
-    const divele = document.getElementById("todo" + index);
-    divele.parentElement.removeChild(divele);
-}
+// }
+
+// function Deletetodo(index) {
+//     const divele = document.getElementById("todo" + index);
+//     divele.parentElement.removeChild(divele);
+// }
