@@ -35,22 +35,28 @@ function task() {
 
     const goal = document.getElementById("input");
     const achive = goal.value;
+    goal.value = "";
 
     const divs = document.createElement("div");
+    divs.id = "task" + index;
 
-    const spans = document.getElementById("span");
-    spans.innerHTML = goal;
+    const spans = document.createElement("span");
+    spans.innerHTML = achive;
 
     divs.appendChild(spans);
 
     const addbut = document.createElement("button");
-    addbut.innerHTML = "delet";
-    addbut.setAttribute("onclick" , delet(" + index +"));
+    addbut.innerHTML = "delete";
+    addbut.setAttribute("onclick", "delet(" + index + ")");
 
-    addbut.append(goal);
-    
+    divs.appendChild(addbut);
+
+    document.getElementById("todo").appendChild(divs);
+    index = index + 1;
+
 }
 
 function delet(ind) {
-
+    const delet = document.getElementById("task" + ind);
+    delet.parentElement.removeChild(delet);
 }
