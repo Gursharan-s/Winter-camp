@@ -30,3 +30,12 @@
 //     const divele = document.getElementById("todo" + index);
 //     divele.parentElement.removeChild(divele);
 // }
+
+function task () {
+
+    const goal = document.getElementById("input");
+    const achive = goal.value;
+
+    const divs = document.createElement("div") ;
+    
+}
