@@ -30,12 +30,27 @@
 //     const divele = document.getElementById("todo" + index);
 //     divele.parentElement.removeChild(divele);
 // }
-
-function task () {
+let index = 1;
+function task() {
 
     const goal = document.getElementById("input");
     const achive = goal.value;
 
-    const divs = document.createElement("div") ;
+    const divs = document.createElement("div");
+
+    const spans = document.getElementById("span");
+    spans.innerHTML = goal;
+
+    divs.appendChild(spans);
+
+    const addbut = document.createElement("button");
+    addbut.innerHTML = "delet";
+    addbut.setAttribute("onclick" , delet(" + index +"));
+
+    addbut.append(goal);
     
+}
+
+function delet(ind) {
+
 }
