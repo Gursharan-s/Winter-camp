@@ -45,18 +45,32 @@ class recantagle {
 }
 
 class sqaure {
-    constructor(side, color){
+    constructor(side, color) {
         this.side = side
     }
 
-    area (){
-        return this.side * this.side;
+    area() {
+        const area = this.side * this.side;
+        return area;
     }
-    permeter () {
+    permeter() {
         return 4 * this.side;
     }
 }
 
+class circle {
+    constructor(radius, color) {
+        this.radius = radius;
+    }
 
+    area() {
+        const area = this.radius * this.radius * Math.PI;
+        return area;
+    }
+    permeter() {
+        return `A circle with radius ${this.radius} and color ${this.color}`;
+
+    }
+}
 
 
