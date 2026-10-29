@@ -26,7 +26,7 @@
 
 
 
-class recantagle {
+class recantagle extends change{
     constructor(width, height, color) {
         this.width = width;
         this.height = height;
@@ -44,7 +44,7 @@ class recantagle {
     }
 }
 
-class sqaure {
+class sqaure extends change{
     constructor(side, color) {
         this.side = side
     }
@@ -58,7 +58,7 @@ class sqaure {
     }
 }
 
-class circle {
+class circle extends change{
     constructor(radius, color) {
         this.radius = radius;
     }
