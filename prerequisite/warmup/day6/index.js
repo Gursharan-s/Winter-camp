@@ -28,6 +28,7 @@
 
 class recantagle extends change{
     constructor(width, height, color) {
+        super(color);
         this.width = width;
         this.height = height;
     }
@@ -47,6 +48,7 @@ class recantagle extends change{
 class sqaure extends change{
     constructor(side, color) {
         this.side = side
+        super(color);
     }
 
     area() {
@@ -61,6 +63,7 @@ class sqaure extends change{
 class circle extends change{
     constructor(radius, color) {
         this.radius = radius;
+        super(color);
     }
 
     area() {
