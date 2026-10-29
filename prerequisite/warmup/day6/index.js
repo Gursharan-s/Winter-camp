@@ -73,4 +73,14 @@ class circle {
     }
 }
 
+class change {
+    constructor (color) {
+        this.color = color ;
+    }
+    paint () {
+        console.log( "this paint the color " + this.color);
+        
+    }
+}
+
 
