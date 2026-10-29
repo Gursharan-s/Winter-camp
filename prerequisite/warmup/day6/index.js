@@ -26,7 +26,7 @@
 
 
 
-class recantagle extends change{
+class recantagle extends change {
     constructor(width, height, color) {
         super(color);
         this.width = width;
@@ -45,7 +45,7 @@ class recantagle extends change{
     }
 }
 
-class sqaure extends change{
+class sqaure extends change {
     constructor(side, color) {
         this.side = side
         super(color);
@@ -56,11 +56,12 @@ class sqaure extends change{
         return area;
     }
     permeter() {
+        console.log("This Was the Answer", this.width + this.height, " this was the color " + this.color);
         return 4 * this.side;
     }
 }
 
-class circle extends change{
+class circle extends change {
     constructor(radius, color) {
         this.radius = radius;
         super(color);
@@ -71,19 +72,29 @@ class circle extends change{
         return area;
     }
     permeter() {
+
         return `A circle with radius ${this.radius} and color ${this.color}`;
 
     }
 }
 
 class change {
-    constructor (color) {
-        this.color = color ;
+    constructor(color) {
+        this.color = color;
     }
-    paint () {
-        console.log( "this paint the color " + this.color);
-        
+    paint() {
+        console.log("this paint the color " + this.color);
+
     }
 }
+
+const ans = (4, 4, "yellow");
+console.log(recantagle.area());
+
+const per = ans.permeter();
+console.log(per);
+
+
+
 
 
