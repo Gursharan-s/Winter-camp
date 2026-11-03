@@ -64,13 +64,13 @@ class sqaure extends change {
 
     area() {
         const area = this.side * this.side;
-        console.log("this is the area" , area);
+        console.log("this is the area", area);
         return area;
     }
     permeter() {
         const sid = 4 * this.side;
-        console.log(" This is the side " , sid);
-        
+        console.log(" This is the side ", sid);
+
         return sid;
     }
 }
@@ -83,11 +83,15 @@ class circle extends change {
 
     area() {
         const area = this.radius * this.radius * Math.PI;
+        console.log("this is the area ", this.radius);
+
         return area;
     }
     permeter() {
+        const pp = Math.PI * this.radius;
+        console.log("This is the radius ", pp);
 
-        return `A circle with radius ${this.radius} and color ${this.color}`;
+        return pp;
 
     }
 }
@@ -106,5 +110,8 @@ const per1 = sq.permeter();
 console.log(per1);
 
 
-con
+const cr = new circle(4, " blue");
+console.log(cr.area());
 
+const per2 = sq.permeter();
+console.log(per2);
