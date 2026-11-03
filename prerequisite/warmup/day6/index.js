@@ -64,11 +64,14 @@ class sqaure extends change {
 
     area() {
         const area = this.side * this.side;
+        console.log("this is the area" , area);
         return area;
     }
     permeter() {
+        const sid = 4 * this.side;
+        console.log(" This is the side " , sid);
         
-        return 4 * this.side;
+        return sid;
     }
 }
 
@@ -96,7 +99,12 @@ console.log(ans.area());
 const per = ans.permeter();
 console.log(per);
 
+const sq = new sqaure(5, "red");
+console.log(sq.area());
+
+const per1 = sq.permeter();
+console.log(per1);
 
 
-
+con
 
