@@ -39,21 +39,50 @@ const fs = require("fs");
 //         console.log("heloooo jiii");
 //     })
 
-function setTimeoutPromisefid (ms) {
-    return new Promise ((resolve , reject) => {
-        setTimeout (() => {
-            resolve();
-        }, ms);
-    });
+// function setTimeoutPromisefid (ms) {
+//     return new Promise ((resolve , reject) => {
+//         setTimeout (() => {
+//             resolve();
+//         }, ms);
+//     });
+// }
+
+// async function solve() {
+//     await setTimeoutPromisefid(1000);
+//     console.log("hi");
+//     await setTimeoutPromisefid(3000);
+//     console.log("hello");
+//     await setTimeoutPromisefid(5000);
+//     console.log("Hello There")
+// }
+
+// solve();
+
+
+function cleanfile(filepath) {
+    return new Promise((resolve, reject) => {
+        fs.readFile(filepath, "utf-8", function (err, content) {
+            if (err) {
+                reject();
+            }
+            else {
+                const trimcontent = content.trim();
+                fs.writeFile(filepath, trimcontent, function (err) {
+                    if (err) {
+                        return reject();
+                    }
+
+                    else {
+                        console.log (content);
+                        resolve("it's done'ssssssssssssssssss");
+                    }
+                });
+            }
+        });
+    })
 }
 
-async function solve() {
-    await setTimeoutPromisefid(1000);
-    console.log("hi");
-    await setTimeoutPromisefid(3000);
-    console.log("hello");
-    await setTimeoutPromisefid(5000);
-    console.log("Hello There")
-}
+cleanfile("a.txt")
+    .then((message) => console.log(message))
 
-solve();
+    .catch((err) => console.log(err));
