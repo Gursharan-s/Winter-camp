@@ -59,30 +59,46 @@ const fs = require("fs");
 // solve();
 
 
-function cleanfile(filepath) {
-    return new Promise((resolve, reject) => {
-        fs.readFile(filepath, "utf-8", function (err, content) {
-            if (err) {
-                reject();
-            }
-            else {
-                const trimcontent = content.trim();
-                fs.writeFile(filepath, trimcontent, function (err) {
-                    if (err) {
-                        return reject();
-                    }
+// function cleanfile(filepath) {
+//     return new Promise((resolve, reject) => {
+//         fs.readFile(filepath, "utf-8", function (err, content) {
+//             if (err) {
+//                 reject();
+//             }
+//             else {
+//                 const trimcontent = content.trim();
+//                 fs.writeFile(filepath, trimcontent, function (err) {
+//                     if (err) {
+//                         return reject();
+//                     }
 
-                    else {
-                        console.log (content);
-                        resolve("it's done'ssssssssssssssssss");
-                    }
-                });
-            }
+//                     else {
+//                         console.log (content);
+//                         resolve("it's done'ssssssssssssssssss");
+//                     }
+//                 });
+//             }
+//         });
+//     })
+// }
+
+// cleanfile("a.txt")
+//     .then((message) => console.log(message))
+
+//     .catch((err) => console.log(err));
+
+
+
+function cleanfile(filepath, pp) {
+    fs.readFile(filepath, "utf-8", function (err, content) {
+        content = content.trim();
+        fs.writeFile(filepath, content, function () {
+            pp();
         });
-    })
+    });
 }
 
-cleanfile("a.txt")
-    .then((message) => console.log(message))
-
-    .catch((err) => console.log(err));
+function doneo() {
+    console.log ("file while done");
+}
+cleanfile("a.txt", doneo);
